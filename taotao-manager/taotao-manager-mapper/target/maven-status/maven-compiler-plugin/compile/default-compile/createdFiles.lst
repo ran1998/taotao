@@ -1,1 +1,12 @@
+com\taotao\manager\mapper\TbOrderShippingMapper.class
+com\taotao\manager\mapper\TbUserMapper.class
+com\taotao\manager\mapper\TbItemParamMapper.class
+com\taotao\manager\mapper\TbItemParamItemMapper.class
+com\taotao\manager\mapper\TbContentCategoryMapper.class
+com\taotao\manager\mapper\TbItemDescMapper.class
+com\taotao\manager\mapper\TbItemMapper.class
+com\taotao\manager\mapper\TbOrderMapper.class
+com\taotao\manager\mapper\TbOrderItemMapper.class
+com\taotao\manager\mapper\TbItemCatMapper.class
 com\taotao\manager\mapper\TestMapper.class
+com\taotao\manager\mapper\TbContentMapper.class

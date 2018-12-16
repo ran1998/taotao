@@ -21,7 +21,11 @@
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper</artifactId>
+			<version>3.4.2-fix</version>
+		</dependency>
 		<!-- MySql -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -33,6 +37,7 @@
 			<groupId>com.jolbox</groupId>
 			<artifactId>bonecp-spring</artifactId>
 		</dependency>
-  	
+
+		
   </dependencies>
 </project>
