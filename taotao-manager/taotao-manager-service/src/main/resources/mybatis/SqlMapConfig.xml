@@ -12,7 +12,10 @@
 			<property name="rowBoundsWithCount" value="true" />
 		</plugin>
 
-		
+		<plugin interceptor="com.github.abel533.mapperhelper.MapperInterceptor">
+			<property name="IDENTITY" value="MYSQL"/>
+			<property name="mappers" value="com.github.abel533.mapper.Mapper"/>
+		</plugin>
 	</plugins>
 
 </configuration>
