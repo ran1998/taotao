@@ -74,7 +74,6 @@
 			//根据商品的分类id取商品 的规格模板，生成规格信息。第四天内容。
 			//TAOTAO.changeItemParam(node, "itemAddForm");
 		}});
-		initPicUpload();
 	});
 	//提交表单
 	function submitForm(){
@@ -124,44 +123,6 @@
 		itemAddEditor.html('');
 	}
 	
-	//图片上传初始化
-	function initPicUpload(){
-		//class选择器，其实获取到的就是上传图片按钮
-       	$(".picFileUpload").click(function(){
-       		//id选择器，其实获取到的就是form表单
-       		var form = $('#itemAddForm');
-       		//加载多图片上传组件（参考富文本编辑器的文档）
-       		KindEditor.editor(kingEditorParams).loadPlugin('multiimage',function(){
-       			//editor:就是编辑器本身
-       			var editor = this;
-       			//执行插件的逻辑
-       			editor.plugin.multiImageDialog({
-       			//当点击“全部插入”按钮，执行以下逻辑
-       			//urlList：多图片上传成功后，返回的图片url
-					clickFn : function(urlList) {
-					//获取class为pics的li的标签，删除，清空之前上传图片
-						$(".pics li").remove();
-						var imgArray = [];
-						//遍历返回的图片url
-						//i遍历的角标，data遍历的变量
-						KindEditor.each(urlList, function(i, data) {
-							//从遍历的数据中获取url，其实就是获取图片的url
-							//放到声明数组中
-							imgArray.push(data.url);
-							//获取class为pics的ul标签
-							//在后面追加li标签
-							$(".pics ul").append("<li><a href='"+data.url+"' target='_blank'><img src='"+data.url+"' width='80' height='50' /></a></li>");
-						});
-				//获取name=image的元素，其实就是获取图片上传的input标签
-				//往input标签里赋值
-			//imgArray.join(",")：把数据转为字符串，数组中的元素用，分隔
-				form.find("[name=image]").val(imgArray.join(","));
-						//关闭上传界面
-						editor.hideDialog();
-					}
-				});
-       		});
-       	});
-	}
+
 
 </script>

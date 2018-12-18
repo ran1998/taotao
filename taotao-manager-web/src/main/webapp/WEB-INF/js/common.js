@@ -68,15 +68,17 @@ var TT = TAOTAO = {
     		var _ele = $(e);
     		_ele.siblings("div.pics").remove();
     		_ele.after('<div class="pics"><ul></ul></div>');
-    		
+    		console.log(1);
         	//给“上传图片按钮”绑定click事件
         	$(e).click(function(){
+        		
         		var form = $(this).parentsUntil("form").parent("form");
         		//打开图片上传窗口
         		KindEditor.editor(TT.kingEditorParams).loadPlugin('multiimage',function(){
         			var editor = this;
         			editor.plugin.multiImageDialog({
 						clickFn : function(urlList) {
+							alert(1);
 							var imgArray = [];
 							KindEditor.each(urlList, function(i, data) {
 								imgArray.push(data.url);
