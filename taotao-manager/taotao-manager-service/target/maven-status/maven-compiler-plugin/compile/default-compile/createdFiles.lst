@@ -1,2 +1,3 @@
 com\taotao\manager\service\impl\TestServiceImpl.class
+com\taotao\manager\service\impl\ContentCategoryServiceImpl.class
 com\taotao\manager\service\impl\ItemServiceImpl.class
